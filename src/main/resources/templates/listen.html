@@ -1,0 +1,23 @@
+
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="//vjs.zencdn.net/5.8/video-js.min.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/5.8/video.min.js"></script>
+</head>
+<body>
+<h1>Listen</h1>
+<p th:text="'id: ' + ${id}" />
+
+<video id="player" class="video-js vjs-default-skin" height="360" width="640" controls preload="none">
+    <source th:src="@{'http://localhost:8080/streams/'+ ${id}}" type="audio/mpeg" />
+</video>
+
+<script>
+    var player = videojs('#player');
+</script>
+
+</body>
+</html>
