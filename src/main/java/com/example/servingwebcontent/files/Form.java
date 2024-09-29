@@ -1,4 +1,4 @@
-package com.example.servingwebcontent;
+package com.example.servingwebcontent.files;
 
 import lombok.Getter;
 import lombok.Setter;

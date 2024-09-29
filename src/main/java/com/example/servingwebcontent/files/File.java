@@ -1,4 +1,4 @@
-package com.example.servingwebcontent;
+package com.example.servingwebcontent.files;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -27,5 +27,5 @@ public class File {
 
     @ContentId private String contentId;
     @ContentLength private long contentLength;
-    private String contentMimeType = "text/plain";
+    private String contentMimeType;
 }

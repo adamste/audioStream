@@ -1,4 +1,4 @@
-package com.example.servingwebcontent;
+package com.example.servingwebcontent.files;
 
 import org.springframework.content.commons.store.ContentStore;
 import org.springframework.content.rest.StoreRestResource;

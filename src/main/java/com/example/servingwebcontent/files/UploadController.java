@@ -1,20 +1,16 @@
-package com.example.servingwebcontent;
+package com.example.servingwebcontent.files;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.InputStreamResource;
-import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 public class UploadController {
@@ -59,7 +55,12 @@ public class UploadController {
 
         return "result";
     }
-    //1. rozkminic biblioteke
-    //2. wyswietlanie listy plikow we frontendzie
-    //3. frontend niech jedzie streama, a nie cały plik
+    //0. zrobić dwóch użytkowników
+
+    //1. pliki zapisuja sie w src/main/resources/content_files "jak w s3"
+    //2. postgres zamiast h2 w kontenerze
+    //3. tabelki: userzy i półki (reposy)
+    //4. we froncie: menedżer półek;
+    //          1. utwórz półkę(id_usera, pusta lista file)
+    //          2. listowanie wszystkich mp3 (z opcją dodaj do swojej półki)
 }
